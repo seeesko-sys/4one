@@ -1,94 +1,98 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>4ONE — Official Site</title>
-  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/style.css" />
-  <meta name="description" content="4ONE — minimalist Solana token for fast, fun, and fair transfers." />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<header class="site-header">
-  <a class="brand" href="/">
-    <img src="40ne_200x200.png" alt="4ONE logo" width="36" height="36">
-    <span>4ONE</span>
-  </a>
-  <nav class="nav">
-    <a href="/tokenomics.html">Tokenomics</a>
-    <a href="/whitepaper.html">Whitepaper</a>
-    <a href="/faq.html">FAQ</a>
-    <a href="/about.html">About</a>
-  </nav>
-</header>
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav">
+      <a class="brand" href="/">
+        <img src="4one_200x200.png" alt="4ONE logo" class="logo" />
+        <span>4ONE</span>
+      </a>
+      <ul class="menu">
+        <li><a href="tokenomics.html">Tokenomics</a></li>
+        <li><a href="whitepaper.html">Whitepaper</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<main class="container">
-  <section class="hero">
-    <h1>4ONE (4ONE)</h1>
-    <p class="subtitle">Minimalist Solana token — fast, low-fee, no nonsense.</p>
+  <!-- Hero Section -->
+  <main class="main">
+    <section class="hero">
+      <h1>4ONE (4ONE)</h1>
+      <p>Minimalist Solana token — fast, low-fee, no nonsense.</p>
 
-    <div class="card grid-2">
-      <div>
-        <h3>Contract</h3>
-        <div class="mono" id="ca">TBA (Solana)</div>
-        <div class="btn-row">
-          <a class="btn" href="#" id="copy">Copy</a>
-          <a class="btn ghost" href="#" target="_blank" rel="noopener" id="solscan">View on Solscan</a>
+      <div class="cards">
+        <div class="card">
+          <h3>Contract</h3>
+          <p>TBA</p>
+          <button>Copy</button>
+          <button>View on Solscan</button>
+        </div>
+        <div class="card">
+          <h3>Markets</h3>
+          <button>Buy on Raydium</button>
+          <button>Add Liquidity</button>
         </div>
       </div>
-      <div>
-        <h3>Markets</h3>
-        <div class="btn-row">
-          <a class="btn" href="#" target="_blank" rel="noopener">Buy on Raydium</a>
-          <a class="btn ghost" href="#" target="_blank" rel="noopener">Add Liquidity</a>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="card">
-    <h2>Quick Tokenomics</h2>
-    <div class="table">
-      <div class="row head"><span>Category</span><span>Amount</span><span>%</span></div>
-      <div class="row"><span>Total Supply</span><span class="mono">41,000,000,000</span><span>100%</span></div>
-      <div class="row"><span>Liquidity</span><span class="mono">TBA</span><span>TBA</span></div>
-      <div class="row"><span>Treasury</span><span class="mono">TBA</span><span>TBA</span></div>
-      <div class="row"><span>Burned</span><span class="mono">TBA</span><span>TBA</span></div>
-    </div>
-    <p class="muted">Full breakdown: <a href="/tokenomics.html">see Tokenomics</a>.</p>
-  </section>
+    <!-- Tokenomics Quick View -->
+    <section class="tokenomics">
+      <h2>Quick Tokenomics</h2>
+      <table>
+        <tr>
+          <th>Category</th>
+          <th>Amount</th>
+          <th>%</th>
+        </tr>
+        <tr>
+          <td>Total Supply</td>
+          <td>43,000,000,000</td>
+          <td>100%</td>
+        </tr>
+        <tr>
+          <td>Liquidity</td>
+          <td>TBA</td>
+          <td>TBA</td>
+        </tr>
+        <tr>
+          <td>Treasury</td>
+          <td>TBA</td>
+          <td>TBA</td>
+        </tr>
+        <tr>
+          <td>Burned</td>
+          <td>TBA</td>
+          <td>TBA</td>
+        </tr>
+      </table>
+      <p>Full breakdown: see <a href="tokenomics.html">Tokenomics</a>.</p>
+    </section>
 
-  <section class="card">
-    <h2>Links</h2>
-    <ul class="links">
-      <li><a href="https://twitter.com/" target="_blank" rel="noopener">Twitter/X</a></li>
-      <li><a href="https://t.me/" target="_blank" rel="noopener">Telegram</a></li>
-      <li><a href="mailto:token@4one.fun">Email: token@4one.fun</a></li>
-      <li><a href="/whitepaper.html">Whitepaper</a></li>
-    </ul>
-  </section>
-</main>
+    <!-- Links -->
+    <section class="links">
+      <h2>Links</h2>
+      <ul>
+        <li><a href="https://twitter.com" target="_blank">Twitter/X</a></li>
+        <li><a href="https://t.me/fortyonefun" target="_blank">Telegram</a></li>
+        <li><a href="mailto:token@4one.fun">Email: token@4one.fun</a></li>
+        <li><a href="whitepaper.html">Whitepaper</a></li>
+      </ul>
+    </section>
+  </main>
 
-<footer class="site-footer">
-  <p>© <span id="y"></span> 4ONE. Not financial advice.</p>
-</footer>
-
-<script>
-  // set year
-  document.getElementById('y').textContent = new Date().getFullYear();
-
-  // contract controls (fill these once you deploy)
-  const CA = "TBA"; // <-- paste Solana mint address here
-  const SOLSCAN = CA !== "TBA" ? `https://solscan.io/token/${CA}` : "#";
-
-  document.getElementById('ca').textContent = CA;
-  document.getElementById('solscan').href = SOLSCAN;
-  document.getElementById('copy').onclick = (e) => {
-    e.preventDefault();
-    navigator.clipboard.writeText(CA);
-    e.target.textContent = "Copied!";
-    setTimeout(()=> e.target.textContent = "Copy", 1200);
-  };
-</script>
+  <!-- Footer -->
+  <footer class="footer">
+    <div>© 2025 4ONE. Not financial advice.</div>
+    <div class="byline">by Ts. Todorov</div>
+  </footer>
 </body>
 </html>

@@ -1,98 +1,110 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+
+<html lang="bg">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>4ONE — Official Site</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>4ONE — Official</title>
+  <meta name="description" content="FortyOne (4ONE) — minimalist Solana token. Website, socials, contract & links." />
+  <meta property="og:title" content="4ONE (4ONE)" />
+  <meta property="og:description" content="FortyOne — minimalist Solana token. Buy, view contract, join community." />
+  <meta property="og:image" content="/4one_200x200.png" />
+  <style>
+    :root{--bg:#0f1113;--card:#151718;--muted:#9aa3a7;--accent:#2dd4bf;--glass:rgba(255,255,255,0.03);font-family:Inter,system-ui,Segoe UI,Helvetica,Arial;margin:0}
+    html,body{height:100%;background:linear-gradient(180deg,#0c0d0e 0%,#0f1113 100%);color:#e6eef2}
+    .wrap{max-width:980px;margin:36px auto;padding:28px}
+    header{display:flex;align-items:center;gap:18px}
+    .logo{width:56px;height:56px;border-radius:10px;background:#fff;display:flex;align-items:center;justify-content:center;overflow:hidden}
+    .logo img{width:100%;height:100%;object-fit:cover}
+    h1{font-size:22px;margin:0}
+    p.lead{color:var(--muted);margin:6px 0 22px}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,0.5);backdrop-filter:blur(6px)}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:20px;margin-top:18px}
+    .links a{display:inline-block;margin:6px 8px 6px 0;padding:8px 12px;background:var(--glass);color:var(--accent);border-radius:8px;text-decoration:none}
+    .muted{color:var(--muted);font-size:14px}
+    footer{margin-top:28px;padding-top:14px;border-top:1px solid rgba(255,255,255,0.03);display:flex;justify-content:space-between;align-items:center}
+    .small{font-size:13px;color:var(--muted)}
+    @media(max-width:880px){.grid{grid-template-columns:1fr;}.wrap{padding:18px}}
+    .badge{display:inline-block;background:rgba(255,255,255,0.04);padding:6px 10px;border-radius:999px;color:var(--muted);font-weight:600}
+    .action{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+    .btn{background:linear-gradient(180deg,var(--accent),#20bfb0);color:#021010;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:700}
+    code{background:rgba(255,255,255,0.03);padding:6px 8px;border-radius:6px}
+  </style>
 </head>
 <body>
-  <!-- Header -->
-  <header class="header">
-    <nav class="nav">
-      <a class="brand" href="/">
-        <img src="4one_200x200.png" alt="4ONE logo" class="logo" />
-        <span>4ONE</span>
-      </a>
-      <ul class="menu">
-        <li><a href="tokenomics.html">Tokenomics</a></li>
-        <li><a href="whitepaper.html">Whitepaper</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </nav>
-  </header>
+  <div class="wrap">
+    <header>
+      <div class="logo">
+        <img src="4one_200x200.png" alt="4ONE logo" />
+      </div>
+      <div>
+        <h1>4ONE <span class="badge">4ONE</span></h1>
+        <p class="lead">FortyOne — minimalist Solana token. Fast, low-fee, community-driven.</p>
+      </div>
+    </header><section class="card">
+  <div class="grid">
+    <div>
+      <h2>Quick info</h2>
+      <p class="muted">Token mint / identifier:<br/><code id="mint">ra3XnhDwFuann9t2BR9xkSfVz5uAmwnjbLAzpry2CFu</code></p>
+      <p class="muted">Website: <a href="https://4one.fun" style="color:var(--accent)">4one.fun</a></p>
+      <p class="muted">Email: <a href="mailto:token@4one.fun" style="color:var(--accent)">token@4one.fun</a></p>
 
-  <!-- Hero Section -->
-  <main class="main">
-    <section class="hero">
-      <h1>4ONE (4ONE)</h1>
-      <p>Minimalist Solana token — fast, low-fee, no nonsense.</p>
-
-      <div class="cards">
-        <div class="card">
-          <h3>Contract</h3>
-          <p>TBA</p>
-          <button>Copy</button>
-          <button>View on Solscan</button>
-        </div>
-        <div class="card">
-          <h3>Markets</h3>
-          <button>Buy on Raydium</button>
-          <button>Add Liquidity</button>
+      <div style="margin-top:14px">
+        <div class="muted">Where to view / buy</div>
+        <div class="action links">
+          <a href="https://pump.fun/coin/ra3XnhDwFuann9t2BR9xkSfVz5uAmwnjbLAzpry2CFu" target="_blank">Buy / View on Pump</a>
+          <a href="https://solscan.io/token/ra3XnhDwFuann9t2BR9xkSfVz5uAmwnjbLAzpry2CFu" target="_blank">View on Solscan</a>
+          <a href="https://github.com/seeesko-sys/4one" target="_blank">GitHub</a>
         </div>
       </div>
-    </section>
 
-    <!-- Tokenomics Quick View -->
-    <section class="tokenomics">
-      <h2>Quick Tokenomics</h2>
-      <table>
-        <tr>
-          <th>Category</th>
-          <th>Amount</th>
-          <th>%</th>
-        </tr>
-        <tr>
-          <td>Total Supply</td>
-          <td>43,000,000,000</td>
-          <td>100%</td>
-        </tr>
-        <tr>
-          <td>Liquidity</td>
-          <td>TBA</td>
-          <td>TBA</td>
-        </tr>
-        <tr>
-          <td>Treasury</td>
-          <td>TBA</td>
-          <td>TBA</td>
-        </tr>
-        <tr>
-          <td>Burned</td>
-          <td>TBA</td>
-          <td>TBA</td>
-        </tr>
-      </table>
-      <p>Full breakdown: see <a href="tokenomics.html">Tokenomics</a>.</p>
-    </section>
+      <div style="margin-top:14px">
+        <div class="muted">Socials</div>
+        <div class="action links">
+          <a href="https://x.com/SeeeskoTodorov" target="_blank">Twitter / X (@SeeeskoTodorov)</a>
+          <a href="https://t.me/fortyonefun" target="_blank">Telegram (@fortyonefun)</a>
+        </div>
+      </div>
 
-    <!-- Links -->
-    <section class="links">
-      <h2>Links</h2>
-      <ul>
-        <li><a href="https://twitter.com" target="_blank">Twitter/X</a></li>
-        <li><a href="https://t.me/fortyonefun" target="_blank">Telegram</a></li>
-        <li><a href="mailto:token@4one.fun">Email: token@4one.fun</a></li>
-        <li><a href="whitepaper.html">Whitepaper</a></li>
-      </ul>
-    </section>
-  </main>
+    </div>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div>© 2025 4ONE. Not financial advice.</div>
-    <div class="byline">by Ts. Todorov</div>
-  </footer>
-</body>
+    <aside>
+      <h3 style="margin-top:0">Stats</h3>
+      <div style="margin:10px 0;background:rgba(255,255,255,0.02);padding:12px;border-radius:10px">
+        <div class="muted">Market cap (live)</div>
+        <div style="font-size:18px;font-weight:800;margin-top:6px">$<span id="mc">0</span></div>
+        <div class="muted" style="margin-top:8px">Price: <span id="price">$0</span></div>
+      </div>
+
+      <div style="margin-top:8px">
+        <a class="btn" href="https://pump.fun/coin/ra3XnhDwFuann9t2BR9xkSfVz5uAmwnjbLAzpry2CFu" target="_blank">Buy 4ONE</a>
+      </div>
+
+    </aside>
+  </div>
+
+  <div style="margin-top:16px">
+    <h3>About</h3>
+    <p class="muted">FortyOne (4ONE) is a minimalist Solana token built for speed, low fees and community-driven growth. No hype — utility and fun.</p>
+  </div>
+
+</section>
+
+<footer>
+  <div class="small">© 2025 4ONE. Not financial advice. — by Ts.Todorov</div>
+  <div>
+    <a class="small" href="https://github.com/seeesko-sys/4one" target="_blank">GitHub repo</a>
+  </div>
+</footer>
+
+  </div>  <script>
+    // Small placeholder script: replace with real API calls if you want live stats
+    (function(){
+      const priceEl = document.getElementById('price');
+      const mcEl = document.getElementById('mc');
+      // dummy values
+      priceEl.textContent = '0.005646';
+      mcEl.textContent = '6,500';
+    })();
+  </script></body>
 </html>
